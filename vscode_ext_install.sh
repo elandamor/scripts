@@ -12,6 +12,7 @@ EXTENSIONS=(
   'formulahendry.auto-rename-tag'
   'dbaeumer.vscode-eslint'
   'sleistner.vscode-fileutils'
+  'EditorConfig.editorconfig'
 )
 
 for extension in "${EXTENSIONS[@]}"; do
