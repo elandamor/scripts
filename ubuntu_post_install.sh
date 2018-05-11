@@ -9,14 +9,6 @@ APTS='
 	ubuntu-restricted-extras
 '
 
-REPOS='
-	# TPL
-	add-apt-repository -y ppa:linrunner/tlp universe
-	# Yarn
-	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-'
-
 SNAPS=(
 	'communitheme'
 	'gitkraken'
@@ -35,7 +27,7 @@ else
 	
 	# Dependencies
 	echo "Installing dependencies..."
-	# apt install -y --no-install-recommends curl gcc make libpng-dev
+	apt install -y --no-install-recommends curl gcc make libpng-dev
 	
 	# Install Node Version Manager
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -80,24 +72,6 @@ else
 	add-apt-repository -y ppa:plushuang-tw/uget-stable
 	apt update
 	apt install -y uget
-
-	# Install VSCode Extensions
-	# EXTENSIONS=(
-	# 	'wesbos.theme-cobalt2'
-	# 	'christian-kohler.path-intellisense'
-	# 	'christian-kohler.npm-intellisense'
-	# 	'kumar-harsh.graphql-for-vscode'
-	# 	'wix.vscode-import-cost'
-	# 	'jpoissonnier.vscode-styled-components'
-	# 	'sourcegraph.javascript-typescript'
-	# 	'formulahendry.auto-close-tag'
-	# 	'formulahendry.auto-rename-tag'
-	# 	'sleistner.vscode-fileutils'
-	# )
-
-	# for extension in "${EXTENSIONS[@]}"; do
-	# 	code --install-extension $extension
-	# done
 
 	# Install extras
 	if [ -d /sys/class/power_supply/BAT* ]; then
