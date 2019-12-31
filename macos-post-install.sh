@@ -8,7 +8,7 @@ BREWS=(
 )
 
 CASKS=(
-  'zoom'
+  'zoomus'
   'visual-studio-code'
   'tunnelbear'
   'the-unarchiver'
