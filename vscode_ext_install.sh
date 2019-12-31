@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
 
 EXTENSIONS=(
-  'wesbos.theme-cobalt2'
-  'christian-kohler.path-intellisense'
-  'christian-kohler.npm-intellisense'
-  'kumar-harsh.graphql-for-vscode'
-  'wix.vscode-import-cost'
-  'jpoissonnier.vscode-styled-components'
-  'sourcegraph.javascript-typescript'
+  'apollographql.vscode-apollo'
   'formulahendry.auto-close-tag'
   'formulahendry.auto-rename-tag'
-  'dbaeumer.vscode-eslint'
+  'coenraads.bracket-pair-colorizer'
+  'wesbos.theme-cobalt2'
+  'deepscan.vscode-deepscan'
+  'editorconfig.editorconfig'
   'sleistner.vscode-fileutils'
-  'EditorConfig.editorconfig'
+  'eamodio.gitlens'
+  'wix.vscode-import-cost'
+  'pkief.material-icon-theme'
+  'christian-kohler.npm-intellisense'
+  'christian-kohler.path-intellisense'
+  'esbenp.prettier-vscode'
+  'pflannery.vscode-versionlens'
+  'jpoissonnier.vscode-styled-components'
 )
 
 for extension in "${EXTENSIONS[@]}"; do
