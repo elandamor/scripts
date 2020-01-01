@@ -13,6 +13,7 @@ CASKS=(
   'tunnelbear'
   'the-unarchiver'
   'spotify'
+  'spectacle'
   'slack'
   'plex-media-server'
   'google-chrome'
