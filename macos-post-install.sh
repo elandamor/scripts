@@ -3,6 +3,7 @@
 BREWS=(
   'yarn'
   'node'
+  'mas'
   'git'
   'cask'
 )
@@ -42,5 +43,7 @@ done
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+
+mas lucky Xcode
 
 brew doctor
