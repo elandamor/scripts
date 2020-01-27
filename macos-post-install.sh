@@ -3,18 +3,21 @@
 BREWS=(
   'yarn'
   'node'
+  'mas'
   'git'
   'cask'
 )
 
 CASKS=(
-  'zoom'
+  'zoomus'
   'visual-studio-code'
   'tunnelbear'
   'the-unarchiver'
   'spotify'
+  'spectacle'
   'slack'
   'plex-media-server'
+  'harvest'
   'google-chrome'
   'free-download-manager'
   'fork'
@@ -23,10 +26,10 @@ CASKS=(
   'copyclip'
 )
 
-# Xcode Command Line Tools
-xcode-select --install
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Xcode Command Line Tools
+xcode-select --install
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -40,5 +43,7 @@ done
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+
+mas lucky Xcode
 
 brew doctor
