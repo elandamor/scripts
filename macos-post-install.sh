@@ -45,6 +45,7 @@ EXTENSIONS=(
   'esbenp.prettier-vscode'
   'pflannery.vscode-versionlens'
   'jpoissonnier.vscode-styled-components'
+  'akamud.vscode-theme-onelight'
 )
 
 # Xcode Command Line Tools
@@ -66,6 +67,26 @@ brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 cat << EOF >> ~/.zshrc
+# git
+alias ga="git add"
+alias gb="git branch"
+alias gbd="git branch -d"
+alias gc="git commit -v"
+alias gcb="git checkout -b"
+alias gcd="git checkout develop"
+alias gcm="git checkout master"
+alias gco="git checkout"
+alias gf="git fetch"
+alias gl="git pull"
+alias gp="git push"
+alias gm="git merge"
+alias gma="git merge --abort"
+alias gmd="git merge develop"
+alias gs="git status"
+
+# docker
+alias dc="docker-compose"
+
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 EOF
