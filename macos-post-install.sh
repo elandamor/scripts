@@ -20,6 +20,7 @@ CASKS=(
   'rectangle'
   'postico'
   'microsoft-edge'
+  'harvest'
   'google-chrome'
   'free-download-manager'
   'fork'
