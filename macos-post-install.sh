@@ -7,6 +7,7 @@ BREWS=(
   'cask'
   'mysql'
   'postgresql'
+  'lerna'
 )
 
 CASKS=(
